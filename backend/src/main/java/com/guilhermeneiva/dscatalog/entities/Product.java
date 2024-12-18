@@ -1,4 +1,4 @@
-package com.guilhermeneiva.dscatalog.entities;
+	package com.guilhermeneiva.dscatalog.entities;
 
 import java.io.Serializable;
 import java.time.Instant;
@@ -40,7 +40,7 @@ public class Product implements Serializable {
 	inverseJoinColumns = @JoinColumn(name = "category_id"))
 	Set<Category> categories = new HashSet<>();
 
-	public Product(Long id, String name, String description, Double price, String imgUrl, Instant date) {
+	public Product() {
 		this.id = id;
 		this.name = name;
 		this.description = description;
